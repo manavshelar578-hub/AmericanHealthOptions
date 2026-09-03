@@ -1,0 +1,559 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Health Coverage Connect | Health Insurance Options</title>
+
+  <meta
+    name="description"
+    content="Explore health insurance options, potential savings, and healthcare resources."
+  >
+
+  <!-- Canonical .com domain -->
+  <link rel="canonical" href="https://www.HealthCoverageConnect.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.HealthCoverageConnect.com/">
+  <meta property="og:title" content="Health Coverage Connect">
+  <meta
+    property="og:description"
+    content="Explore health insurance coverage options and healthcare resources."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7fafc;
+      color: #17324d;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5edf3;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #1264a3;
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    nav a {
+      color: #36546b;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    .hero {
+      padding: 85px 25px;
+      background: linear-gradient(135deg, #eaf6ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      color: #123b5d;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #526b7d;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 8px;
+      border: 0;
+      text-decoration: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: #1264a3;
+      color: white;
+    }
+
+    .secondary {
+      background: white;
+      color: #1264a3;
+      border: 1px solid #b9d5e8;
+      margin-left: 8px;
+    }
+
+    .notice {
+      color: #687b89;
+      font-size: 13px;
+      margin-top: 18px;
+    }
+
+    .hero-card {
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 45px rgba(30,70,100,.12);
+    }
+
+    section {
+      padding: 75px 25px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #687b89;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid #e5edf3;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #617585;
+    }
+
+    .savings {
+      background: #edf7ff;
+      text-align: center;
+    }
+
+    .savings-box {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .savings-box h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .form-section {
+      background: white;
+    }
+
+    .form {
+      max-width: 700px;
+      margin: auto;
+      padding: 35px;
+      background: #f8fbfd;
+      border: 1px solid #e3ebf0;
+      border-radius: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #cbd9e2;
+      border-radius: 7px;
+      margin-bottom: 18px;
+      font-size: 15px;
+      background: white;
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 10px;
+      color: #607585;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input {
+      width: auto;
+      margin-top: 4px;
+    }
+
+    footer {
+      background: #123b5d;
+      color: white;
+      padding: 40px 25px;
+    }
+
+    footer .container p {
+      color: #cbdce8;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    footer a {
+      color: white;
+      margin-right: 20px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Health Coverage Connect</div>
+
+    <nav>
+      <a href="#coverage">Coverage</a>
+      <a href="#savings">Savings</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+
+    <div>
+      <h1>Explore Health Coverage Options That Fit Your Needs</h1>
+
+      <p>
+        Explore health insurance options, potential savings,
+        and healthcare resources available to you.
+      </p>
+
+      <a href="#contact" class="btn primary">
+        Check My Options
+      </a>
+
+      <a href="#coverage" class="btn secondary">
+        Learn More
+      </a>
+
+      <div class="notice">
+        Eligibility, plan availability, costs, and savings vary
+        by individual circumstances and location.
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h2>Find Your Options</h2>
+
+      <p>
+        Provide basic information to request more information
+        about available health coverage options.
+      </p>
+
+      <a href="#contact" class="btn primary">
+        Get Started
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="coverage">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Health Insurance Options</h2>
+      <p>Information to help you explore your choices.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Individual & Family</h3>
+        <p>
+          Explore health coverage options for individuals
+          and families.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Potential Savings</h3>
+        <p>
+          Learn whether you may qualify for financial
+          assistance under applicable programs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Healthcare Resources</h3>
+        <p>
+          Find useful information about healthcare services
+          and resources.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="savings" id="savings">
+  <div class="savings-box">
+
+    <h2>Explore Potential Health Coverage Savings</h2>
+
+    <p>
+      Depending on your circumstances and location, you may
+      qualify for financial assistance toward health coverage.
+    </p>
+
+    <a href="#contact" class="btn primary">
+      Check My Options
+    </a>
+
+    <div class="notice">
+      This website is not Healthcare.gov and is not a government
+      website. Eligibility and savings are subject to applicable
+      program requirements.
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Healthcare Services & Resources</h2>
+      <p>Helpful information for navigating healthcare options.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Provider Information</h3>
+        <p>
+          Information and resources for understanding
+          healthcare provider options.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Telehealth</h3>
+        <p>
+          Learn about available telehealth and virtual-care
+          resources.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Health Education</h3>
+        <p>
+          Easy-to-understand healthcare and coverage information.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="form-section" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Request More Information</h2>
+      <p>Enter your information and a representative can contact you.</p>
+    </div>
+
+    <form class="form" action="/submit-lead" method="POST">
+
+      <div class="form-row">
+
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" required>
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" required>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+
+        <div>
+          <label for="zip">U.S. ZIP Code</label>
+          <input
+            id="zip"
+            name="zip"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]{5}"
+            maxlength="5"
+            placeholder="12345"
+            required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="(555) 555-5555"
+            required>
+        </div>
+
+      </div>
+
+      <label for="email">Email Address</label>
+
+      <input
+        id="email"
+        name="email"
+        type="email"
+        required>
+
+      <label for="contactMethod">
+        Preferred Contact Method
+      </label>
+
+      <select id="contactMethod" name="contactMethod" required>
+        <option value="">Select one</option>
+        <option value="phone">Phone</option>
+        <option value="email">Email</option>
+        <option value="text">Text Message</option>
+      </select>
+
+      <div class="checkbox">
+        <input id="consent" name="consent" type="checkbox" required>
+
+        <label for="consent">
+          I agree to be contacted regarding health insurance
+          options and related services. Consent is not a condition
+          of purchase.
+        </label>
+      </div>
+
+      <button class="btn primary" type="submit">
+        Request Information
+      </button>
+
+    </form>
+
+  </div>
+</section>
+
+<footer>
+
+  <div class="container">
+
+    <strong>Health Coverage Connect</strong>
+
+    <p>
+      Insurance plans, availability, costs, and eligibility vary
+      by state and individual circumstances.
+    </p>
+
+    <p>
+      This website provides marketing and informational services.
+      It is not a government website and is not affiliated with
+      or endorsed by the U.S. government unless expressly stated.
+    </p>
+
+    <p>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms & Conditions</a>
+      <a href="/consent">Consent to Contact</a>
+    </p>
+
+    <p>
+      © 2026 Health Coverage Connect. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
