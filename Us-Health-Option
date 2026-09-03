@@ -557,3 +557,45 @@
 
 </body>
 </html>
+<section class="form-section" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Continue With Secure Enrollment</h2>
+
+      <p>
+        Enrollment and any applicable payments are completed
+        through an authorized secure service provider.
+      </p>
+    </div>
+
+    <div class="form">
+      <h3 style="margin-bottom:15px;">
+        Secure Enrollment
+      </h3>
+
+      <p style="color:#617585; margin-bottom:25px;">
+        Click below to continue to the secure enrollment
+        service. Review eligibility, plan details, costs,
+        and terms before completing enrollment.
+      </p>
+
+      <a
+        href="https://YOUR-AUTHORIZED-PROVIDER.example"
+        class="btn primary"
+        target="_blank"
+        rel="noopener noreferrer">
+        Continue to Secure Enrollment
+      </a>
+
+      <p class="notice">
+        Health Coverage Connect is not Healthcare.gov and is
+        not a government website. Plan availability,
+        eligibility, costs, and savings vary.
+      </p>
+    </div>
+
+  </div>
+
+</section>
